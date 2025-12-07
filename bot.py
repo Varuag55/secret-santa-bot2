@@ -15,19 +15,12 @@ import random
 # ---------------------------
 # НАЛАШТУВАННЯ
 # ---------------------------
-ORGANIZER_ID = 000000000  # <<< ВСТАВ СЮДИ СВІЙ TELEGRAM ID !!!
+ORGANIZER_ID = @Varyag_Drift  # <<< ВСТАВ СЮДИ СВІЙ TELEGRAM ID !!! 
 
 FUNNY_NAMES = [
-    "Космічний Йолоп",
-    "Галактичний Жнець Джагера",
-    "Інтерстелларний Барон Мафії",
-    "Верховний Відкоркувач Jagermeister’у",
-    "Біткоїн-Шаман",
-    "Капітан Чумацького Шляху",
-    "Сенс-Життєвий Гуру",
-    "Метеоритний Холодець",
-    "Пузир Вселенської Любові",
-    "Темна Речовина Родинного Розгардіяшу",
+     "МаксімУм", "СвєтОфор", "ЛізАрдія", "КрісТаЛіна", "ОлЕГОСКОП",
+    "МіЛаванда", "КатЮпітер", "СофиТрон", "ДіАнтиквар", "ЛєнОрион",
+    "ЛеонідОС", "НаталІнка", "АняМальна", "ЖєкаМотор", "ЛіЛюкс", "АльБінГалактика"
 ]
 
 registered_users = {}      # user_id → funny_name
@@ -161,7 +154,7 @@ async def reset(update: Update, context: ContextTypes.DEFAULT_TYPE):
 # MAIN
 # ---------------------------
 def main():
-    app = ApplicationBuilder().token("YOUR_TELEGRAM_BOT_TOKEN_HERE").build()
+    app = ApplicationBuilder().token("8450052650:AAF-40XOduhQ6HVIC-b2l8-SZp0CzH7G6Ko").build()
 
     app.add_handler(CommandHandler("start", start))
     app.add_handler(CommandHandler("draw", draw))
